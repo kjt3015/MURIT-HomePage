@@ -1,0 +1,85 @@
+      a{text-decoration: none;} /*하이퍼링크 밑줄 없애기*/
+      a:visit{color:black;}
+      .up{
+        height: 160px;
+        text-align: center;
+      }
+      .title{
+        font-family: '카페24 아네모네';
+        font-size: 2.5rem;
+        font-weight:bolder;
+        text-align: center;
+        margin-top: 30px;
+      }
+      .covid-menu{
+        font-family : '카페24 아네모네';
+        font-size : 1.5rem;
+        font-weight: bold;
+        margin-top : 40px;
+        word-spacing : 20px;
+      }
+      .main-title{
+        font-family: '카페24 아네모네';
+        text-align: center;
+        font-size: 60px;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      .subtitle{
+        font-family: '카페24 아네모네에어';
+        text-align: center;
+        font-size: 40px;
+        font-weight: 100;
+        margin-bottom: 50px;
+      }
+      .down{
+        height: 1000px;
+        border-top: 1px solid black;
+      }
+      .covid-m{
+        text-align: center;
+        width: 180px;
+        height: 300px;
+        border: 1px solid black;
+        margin: 10px;
+        border-radius: 4px;
+      }
+      .covid-t{
+        display: flex;
+        flex-direction: covid-m;
+        justify-content: center;
+      }
+
+
+      .covid-m-title{
+        font-family: '카페24 아네모네에어';
+        text-align: center;
+        font-size: 1.5rem;
+        height: 53px;
+        background: rgba(209, 204, 226, 0.815);
+        line-height: 53px;
+        border-bottom: 1px solid black;
+      }
+      .covid-m-detail{
+        width : 160px;
+        height : 226px;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 30px;
+        background-repeat: no-repeat;
+        background-size : 100% 100%;
+        padding: 10px;
+      }
+      .covid-m-detail-w{
+        background-image: url("사진/define.png");
+      }
+      .covid-m-detail-s{
+        background-image: url("사진/symptom.png");
+      }
+      .covid-m-detail-n{
+        background-image: url("사진/news.jpg");
+      }
+      .covid-m-detail-c{
+        background-image: url("사진/checklist.png");
+      }

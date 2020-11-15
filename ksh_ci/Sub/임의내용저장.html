@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>코로나란?</title>
+    <link  rel="stylesheet" href="코로나란.css"/>
+    </head>
+    <body>
+      <div class="define">0
+        <div class="contents">
+          <h1>코로나의 정의</h1>
+          <br> 
+        <p>
+          2019년 12월 중국 우한에서 처음 발생한 이후 중국 전역과 전 세계로 확산된, 새로운 유형의 코로나바이러스(SARS-CoV-2)에 의한 호흡기 감염질환이다.<br>
+          코로나바이러스감염증-19는 감염자의 비말(침방울)이 호흡기나 눈·코·입의 점막으로 침투될 때 전염된다.<br>
+          감염되면 약 2~14일(추정)의 잠복기를 거친 뒤 발열(37.5도) 및 기침이나 호흡곤란 등 호흡기 증상, 폐렴이 주증상으로 나타나지만 무증상 감염 사례 빈도도 높게 나오고 있다.<br>
+          <br>[네이버 지식백과] 코로나바이러스감염증-19 - (COVID-19) (시사상식사전, pmg 지식엔진연구소)
+        </p> 
+        <br>
+        <div class = "box">
+          <div class = "covbox">
+            <div class = "제목"> 코로나의 정의 </div>
+            <div class = "내용"> 2019년 12월 중국 우한에서 처음 발생한 이후 중국 전역과 전 세계로 확산된, 새로운 유형의 코로나바이러스(SARS-CoV-2)에 의한 호흡기 감염질환이다.
+              코로나바이러스감염증-19는 감염자의 비말(침방울)이 호흡기나 눈·코·입의 점막으로 침투될 때 전염된다.
+              감염되면 약 2~14일(추정)의 잠복기를 거친 뒤 발열(37.5도) 및 기침이나 호흡곤란 등 호흡기 증상, 폐렴이 주증상으로 나타나지만 무증상 감염 사례 빈도도 높게 나오고 있다.
+              
+              [네이버 지식백과] 코로나바이러스감염증-19 - (COVID-19) (시사상식사전, pmg 지식엔진연구소) </div>
+          </div>
+          <div class = "covbox2">
+            
+          </div>
+        </div>
+        </div>
+      </div>
+    </body>
+</html>
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+h1, p{
+    margin : 0;
+}
+
+.define{
+    background:
+    url("https://pixabay.com/get/53e0d1424c50af14f6d1867dda353678153cdee052587348_1920.jpg") no-repeat;  /*반복되지않게*/
+    background-size: cover;  /* */
+    background-position: center center; /* 백그라운드 위치는 세로축과 가로축의 중앙에 위치하도록 */
+    width: 100vw; /* 페이지의 가로 100퍼 */
+    height: 100vh; /* 페이지의 세로 100퍼  가득차도록 */
+}
+.contents{
+    font-family : '카페24 아네모네에어';
+    color: white;
+
+}
+.box{
+    display : flex;
+    
+}
+
+.covbox{
+    border : 1px solid white;
+    width : 500px;
+    height : 500px;
+    font-family : '카페24 아네모네에어';
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+.covbox2{
+    border : 1px solid white;
+    width : 800px;
+    height : 500px;
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+.제목{
+    border-bottom : 1px solid white;
+    font-family : '카페24 아네모네에어';
+    height : 45px;
+    margin-top : 20px;
+    font-weight : bolder;
+    font-size : 30px;
+
+}
+.내용{
+    font-family : '카페24 아네모네';
+    font-weight : bold;
+    font-size : 20px;
+    word-spacing : 5px;
+    line-height : 30px;
+    
+}
+
+
+.search-box{
+  position: absolute;
+  z-index : 999;  /*절대 위치 : 무조건 top left right bottom으로 직접지정. 변동되지 않는다*/ 
+  top: 32%; left: 50%; /*상단에서 22% 좌측으로 50% 인곳에 위치*/
+  transform: translate(-50%, -50%); /*첫번째 값은 좌측, 오른쪽값은 우측. */
+  background: #2f3640; /*배경색상 설정*/
+  height: 40px; /*해당 상자의 높이 설정*/
+  border-radius: 40px; /*상자의 굴곡설정*/
+  padding: 10px; /*검색엔진과 테두리의 공간 즉 안쪽 여백*/
+}
+.search-box:hover > .search-txt {/*hover : 마우스를 올렸을 때 효과를 줌*/
+  /*search-txt*/
+  width: 240px; /*검색엔진 길이*/
+  padding:0 6px; /*첫번째 값은 top, 두번째값은 좌측 6px 띄움*/
+}
+.search-box:hover > .search-btn {
+  background: white;
+  color: #1e1e1e;
+}
+.search-btn{
+  color:#d9d9d9;
+  float: right; 
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background:#1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.search-txt {
+  border : none;
+  background : none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+
+
+
+  <div class="search-box">	
+    <input type="text" class="search-txt" name="" placeholder="검색어를 입력하세요">
+    <a class="search-btn" href="#">
+      <i class="fas fa-search"></i>
+    </a>
+
+
+    /* 한 줄의 글을 작성하는 방향대로 */
+flex-direction: row;
+
+/* <row>처럼, 대신 역방향 */
+flex-direction: row-reverse;
+
+/* 글 여러 줄이 쌓이는 방향대로 */
+flex-direction: column;
+
+/* <column>처럼, 대신 역방향 */
+flex-direction: column-reverse;
+
+/* 전역 값 */
+flex-direction: inherit;
+flex-direction: initial;
+flex-direction: unset;
