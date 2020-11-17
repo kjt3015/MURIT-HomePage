@@ -4,31 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JunGame</title>
-    <script type="" src="Game.js"></script>
-    <link rel="stylesheet" href="Game.css">
+    <title>RspGame</title>
+    <style>
+        #grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .image_1 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="menu_border">
-        <h1 class="headC"><a href="index.html">MURIT</a></h1>
-    </div>
-    <br>
-    <div id="grid_menu">
-        <div id="menu_border">
+    <div id="tagBorder" class="addTitle"></div><br>
+    <!-- Main양식(제목) -->
+    <div id="grid_menu_main">
+        <div id="tagBorder">
             <h3 style="text-align: center;">MENU</h3>
             <ul class="add_menu"></ul>
         </div>
+        <!-- Main양식(메뉴) -->
 
         <div class="leftMargin">
-            <h2>가위바위보 게임</h2>
+            <h2>MAIN</h2>
+            <!-- Main양식(본문) -->
 
             <div id="grid">
                 <h3 style="text-align: right; margin-right: 10%; color: red;">[당 신]</h3>
                 <h3 style="text-align: left; margin-left: 10%;">[Computer]</h3>
             </div>
 
-            <div class="headC">
+            <div class="textAlign_center">
                 <div style="margin-bottom: 10%;">
                     <img id="userImg" src="image/Q.png" width="10%" alt="userImage">
                     <img src="image/vs.png" width="10%" alt="vs">
@@ -37,13 +47,13 @@
             </div>
             <br>
 
-            <div class="headC">
+            <div class="textAlign_center">
                 <img src="image/rock.png" alt="rock" width="50px" onclick="game_2(playerSelection= '바위')">
                 <img src="image/scissor.png" alt="scissor" width="50px" onclick="game_2(playerSelection= '가위')">
                 <img src="image/paper.png" alt="paper" width="50px" onclick="game_2(playerSelection= '보')">
             </div>
 
-            <form class="headC">
+            <form class="textAlign_center">
                 사용자(가위, 바위, 보): <input type="text" name="userInput" id="userInput" style="width: 100pt;"
                     onkeypress="enterPress()">
                 <br><br>
@@ -81,7 +91,13 @@
 
     <hr>
     <p class="maker"> MURIT / JunGameⓒ kjt3015@naver.com </p>
+    <!-- Main양식(메이커) -->
     <script type="" src="main.js"></script>
+    <!-- Main양식(js링크) -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Main양식(css링크) -->
+
+    <script type="" src="Game.js"></script>
 </body>
 
 </html>

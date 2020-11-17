@@ -1,4 +1,18 @@
+const addT = document.querySelector(".addTitle");
 const addM = document.querySelector(".add_menu");
+
+function addTitle() {
+    let createH1 = document.createElement("h1");
+    createH1.classList.add("textAlign_center");
+    createH1.id = "title_H1_id";
+    addT.appendChild(createH1);
+
+    let createAtag = document.createElement("a");
+    createAtag.href = ("index.html");
+    createAtag.textContent = ("MURIT");
+    let title_H1_id = document.querySelector("#title_H1_id");
+    title_H1_id.appendChild(createAtag);
+}
 
 function addList(className) {
     let createList = document.createElement('li');
@@ -34,10 +48,13 @@ function AddMenu() {
     addList("RSP_PatchNote");
     addAtag(".RSP_PatchNote", "└패치노트", "PatchNote.html");
 
-    /* =========================================================== */
-
     addList("MagicMirror_Main");
     addAtag(".MagicMirror_Main", "매직미러(PC전용)", "magicM.html");
 }
+
+/* =========================== main =============================== */
+
+
+addTitle();
 
 AddMenu();

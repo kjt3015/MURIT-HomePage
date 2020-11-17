@@ -224,7 +224,7 @@ function computerImg_info() {
     }
 }
 
-function enterPress(){
+function enterPress() {
     game();
 }
 
