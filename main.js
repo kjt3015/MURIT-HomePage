@@ -43,13 +43,16 @@ function addAtag(className, textValue, linkURL) {
 
 function AddMenu() {
     addList("RSP_Game");
-    addAtag(".RSP_Game", "가위바위보 게임", "RspGame.html");
+    addAtag(".RSP_Game", "가위바위보 게임", "Rsp_Game.html");
 
     addList("RSP_PatchNote");
-    addAtag(".RSP_PatchNote", "└패치노트", "PatchNote.html");
+    addAtag(".RSP_PatchNote", "└패치노트", "Rsp_PatchNote.html");
 
     addList("MagicMirror_Main");
-    addAtag(".MagicMirror_Main", "매직미러(PC전용)", "magicM.html");
+    addAtag(".MagicMirror_Main", "매직미러(PC전용)", "magicM_Game.html");
+
+    addList("MagicMirror_PatchNote");
+    addAtag(".MagicMirror_PatchNote", "└패치노트", "magicM_PatchNote.html");
 }
 
 /* =========================== main =============================== */

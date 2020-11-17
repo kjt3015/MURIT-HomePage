@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagicMirror</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: repeat(16, 1fr);
+
+            width: 700px;
+            height: 700px;
+            border-style: solid;
+        }
+
+        div {
+            border-style: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tagBorder" class="addTitle"></div><br>
+    <!-- Main양식(제목) -->
+    <div style="border: none;" id="grid_menu_main">
+        <div id="tagBorder">
+            <h3 style="text-align: center;">MENU</h3>
+            <ul class="add_menu"></ul>
+        </div>
+        <!-- Main양식(메뉴) -->
+
+        <div style="border: none;" class="leftMargin">
+            <h2>MAIN</h2>
+            <div id="container"></div>
+        </div>
+        <!-- Main양식(본문) -->
+    </div>
+
+    <hr>
+
+    <div style="border:none" class="leftMargin">
+        <h2>조작법/게임규칙</h2>
+        <h3>게임명</h3>
+        <p>매직 미러</p>
+        <h3>조작법</h3>
+        <ul>
+            <li>매직미러의 가로세로의 수를 숫자만으로 입력한다(매직미러는 정사각형)</li>
+            <li>제작된 매직미러에 마우스 커서가 닿으면 작은 구역들이 색이 변하며 그려진다</li>
+            <li>F5를 눌러 초기화 시킨다</li>
+        </ul>
+    </div>
+    <hr><p class="maker"> MURIT / JunGameⓒ kjt3015@naver.com </p>
+    <!-- Main양식(메이커) -->
+    <script type="" src="main.js"></script>
+    <!-- Main양식(js링크) -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Main양식(css링크) -->
+    <script type src="magicM.js"></script>
+</body>
+
+</html>

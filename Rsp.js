@@ -48,8 +48,8 @@ function Winner() {
         youWin++;
         computerWin++;
 
-        document.getElementById("userImg").src = "image/h.jpg";
-        document.getElementById("computerImg").src = "image/h.jpg";
+        document.getElementById("userImg").src = "image/RspGame/h.jpg";
+        document.getElementById("computerImg").src = "image/RspGame/h.jpg";
     }
     //플레이어가 바위를 냈을 경우
     else if (playerSelection === "바위") {
@@ -60,7 +60,7 @@ function Winner() {
 
                 computerWin++;
 
-                document.getElementById("computerImg").src = "image/win/paper.png";
+                document.getElementById("computerImg").src = "image/RspGame/win/paper.png";
                 document.getElementById("userImg").src = userImg_info();
 
                 break;
@@ -72,7 +72,7 @@ function Winner() {
                 youWin++;
 
                 document.getElementById("computerImg").src = computerImg_info();
-                document.getElementById("userImg").src = "image/win/rock.png";
+                document.getElementById("userImg").src = "image/RspGame/win/rock.png";
 
                 break;
 
@@ -89,7 +89,7 @@ function Winner() {
 
                 computerWin++;
 
-                document.getElementById("computerImg").src = "image/win/scissor.png";
+                document.getElementById("computerImg").src = "image/RspGame/win/scissor.png";
                 document.getElementById("userImg").src = userImg_info();
 
                 break;
@@ -101,7 +101,7 @@ function Winner() {
                 youWin++
 
                 document.getElementById("computerImg").src = computerImg_info();
-                document.getElementById("userImg").src = "image/win/paper.png";
+                document.getElementById("userImg").src = "image/RspGame/win/paper.png";
 
                 break;
 
@@ -117,7 +117,7 @@ function Winner() {
 
                 computerWin++;
 
-                document.getElementById("computerImg").src = "image/win/rock.png";
+                document.getElementById("computerImg").src = "image/RspGame/win/rock.png";
                 document.getElementById("userImg").src = userImg_info();
 
                 break;
@@ -128,7 +128,7 @@ function Winner() {
                 youWin++;
 
                 document.getElementById("computerImg").src = computerImg_info();
-                document.getElementById("userImg").src = "image/win/scissor.png";
+                document.getElementById("userImg").src = "image/RspGame/win/scissor.png";
 
                 break;
 
@@ -137,8 +137,8 @@ function Winner() {
         }
     }
     else if (playerSelection === "특수문자" && round < 3) {
-        document.getElementById("computerImg").src = "image/h.jpg";
-        document.getElementById("userImg").src = "image/h.jpg";
+        document.getElementById("computerImg").src = "image/RspGame/h.jpg";
+        document.getElementById("userImg").src = "image/RspGame/h.jpg";
         youWin++;
     }
     else if (playerSelection === "특수문자" && round > 2) {
@@ -188,15 +188,15 @@ function userImg_info() {
     let img_2;
     switch (playerSelection) {
         case "가위":
-            img_2 = "image/scissor.png";
+            img_2 = "image/RspGame/scissor.png";
             return img_2;
 
         case "바위":
-            img_2 = "image/rock.png";
+            img_2 = "image/RspGame/rock.png";
             return img_2;
 
         case "보":
-            img_2 = "image/paper.png"
+            img_2 = "image/RspGame/paper.png"
             return img_2;
 
         default:
@@ -208,15 +208,15 @@ function computerImg_info() {
     let img_1;
     switch (computerSelection) {
         case "가위":
-            img_1 = "image/scissor.png";
+            img_1 = "image/RspGame/scissor.png";
             return img_1;
 
         case "바위":
-            img_1 = "image/rock.png";
+            img_1 = "image/RspGame/rock.png";
             return img_1;
 
         case "보":
-            img_1 = "image/paper.png"
+            img_1 = "image/RspGame/paper.png"
             return img_1;
 
         default:
