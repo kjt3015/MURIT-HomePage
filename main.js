@@ -53,6 +53,12 @@ function AddMenu() {
 
     addList("MagicMirror_PatchNote");
     addAtag(".MagicMirror_PatchNote", "└패치노트", "magicM_PatchNote.html");
+
+    addList("Lotto_Game");
+    addAtag(".Lotto_Game", "로또게임", "Lotto_Game.html");
+
+    addList("Lotto_PatchNote");
+    addAtag(".Lotto_PatchNote", "└패치노트", "Lotto_PatchNote.html");    
 }
 
 /* =========================== main =============================== */
